@@ -22,10 +22,10 @@ package IBM is
 	function Get_Range_Max(G : Grid; Index : Integer) return Float;
 
 	function Get_Data_2D(G : Grid; I, J : Natural) return Float;
-	function Set_Data_2D(G : Grid; I, J : Natural);
+	procedure Set_Data_2D(G : Grid; I, J : Natural; Value : Float);
 
 	function Get_Data_3D(G : Grid; I, J, K : Natural) return Float;
-	function Set_Data_3D(G : Grid; I, J, K : Natural);
+	procedure Set_Data_3D(G : Grid; I, J, K : Natural; Value : Float);
 	
 	Grid_Error : exception;
 
