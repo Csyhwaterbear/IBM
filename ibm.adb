@@ -1,6 +1,6 @@
 package body IBM is
 
-	function Create_Grid(Dim : Dimension_Count; Range_Value : Grid_Range_Array) return Grid is
+	function Create_Grid(Dim : Natural; Range_Value : Grid_Range_Array) return Grid is
 
 		N : constant Dimension_Count := Dimension_Count(Dim'Length);
 	

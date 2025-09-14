@@ -1,0 +1,4 @@
+aarch64-linux-gnu-gcc-14 -c main.adb
+ibm.ads:42:17: error: missing case values: 0 .. 1
+ibm.ads:42:17: error: missing case values: 4 .. 16#7FFF_FFFF#
+gnatmake: "main.adb" compilation error

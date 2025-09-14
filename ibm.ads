@@ -8,8 +8,8 @@ package IBM is
 		Min, Max	: Float;
 	end record;
 
-	type Grid_Range_Array is array (Dimension_Count range <>) of Grid_Range;
-	type Dimension_Array is array (Dimension_Count range <>) of Integer;
+	type Grid_Range_Array is array (Positive range <>) of Grid_Range;
+	type Dimension_Array is array (Positive range <>) of Integer;
 
 	type Grid(N : Dimension_Count) is tagged private;
 	
