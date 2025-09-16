@@ -17,14 +17,16 @@ package IBM is
 
 	type Grid_Range_Array is array (Positive range <>) of Grid_Range;
 
+	type Positive_Array is array (Positive range <>) of Positive;
+
 	package Coordinate_2D_Vector is new Ada.Containers.Vectors(
 			Index_Type => Positive,
-			Elenment_Type => Coordinate_2D
+			Element_Type => Coordinate_2D
 		);
 
 	package Coordinate_3D_Vector is new Ada.Containers.Vectors(
 			Index_Type => Positive,
-			Elenment_Type => Coordinate_3D
+			Element_Type => Coordinate_3D
 		);
 
 	type Grid (Dimension : Dimension_Type) is tagged private;
@@ -35,7 +37,7 @@ package IBM is
 
 	function Create_Grid(
 			Dimension	: Dimension_Type;
-			Point_Counts	: array of Positive;
+			Point_Counts	: Positive_Array;
 			Ranges		: Grid_Range_Array
 		) return Grid;
 
@@ -45,11 +47,11 @@ private
 	type Grid_Data (Dimension : Dimension_Type) is record
 		case Dimension is
 			when D2 =>
-				Point_Counts	: array (1 .. 2) of Positive;
-				Ranges		: array (1 .. 2) of Grid_Range;
+				Point_Counts	: Positive_Array(1 .. 2);
+				Ranges		: Grid_Range_Array(1 .. 2);
 			when D3 =>
-				Point_Counts	: array (1 .. 3) of Positive;
-				Ranges		: array (1 .. 3) of Grid_Range;
+				Point_Counts	: Positive_Array(1 .. 3);
+				Ranges		: Grid_Range_Array(1 .. 3);
 		end case;
 	end record;
 

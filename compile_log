@@ -1,7 +1,4 @@
 aarch64-linux-gnu-gcc-14 -c main.adb
-ibm.ads:38:43: error: anonymous array definition not allowed here
-ibm.ads:48:51: error: anonymous array not allowed as component
-ibm.ads:49:51: error: anonymous array not allowed as component
-ibm.ads:51:51: error: anonymous array not allowed as component
-ibm.ads:52:51: error: anonymous array not allowed as component
+ibm.ads:53:33: error: "Point_Counts" conflicts with declaration at line 50
+ibm.ads:54:33: error: "Ranges" conflicts with declaration at line 51
 gnatmake: "main.adb" compilation error
