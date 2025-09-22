@@ -1,4 +1,4 @@
 aarch64-linux-gnu-gcc-14 -c main.adb
-ibm.ads:53:33: error: "Point_Counts" conflicts with declaration at line 50
-ibm.ads:54:33: error: "Ranges" conflicts with declaration at line 51
+main.adb:14:23: error: unconstrained subtype not allowed (need initialization)
+main.adb:14:23: error: provide initial value or explicit array bounds
 gnatmake: "main.adb" compilation error
