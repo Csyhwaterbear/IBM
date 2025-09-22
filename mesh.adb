@@ -17,7 +17,7 @@ package body Mesh is
 	begin
 		for Z_Index in 0 .. Spec.Z_Dim.Num_Points-1 loop
 			for Y_Index in 0 .. Spec.Y_Dim.Num_Points-1 loop
-				for X_Index in 0 .. Spec.Z_Dim.Num_Points-1 loop
+				for X_Index in 0 .. Spec.X_Dim.Num_Points-1 loop
 					Result(Index) := (
 						X => Spec.X_Dim.Range_Info.Start + Float(X_Index) * X_Step,
 						Y => Spec.Y_Dim.Range_Info.Start + Float(Y_Index) * Y_Step,

@@ -11,7 +11,7 @@ procedure Main is
 	Y_Range : constant Dimension_Range := (Start => -1.0, Finish => 1.0);
 	Z_Range : constant Dimension_Range := (Start => -1.0, Finish => 0.0);
 	
-	Mesh_Coords : Coordinates_Array;
+	Mesh_Coords : Coordinates_Array(1 .. X_Point * Y_Point * Z_Point);
 begin
 	Put_Line("3D Mesh Generator Example");
 	Put_Line("=========================");

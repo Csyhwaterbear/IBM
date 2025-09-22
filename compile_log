@@ -1,4 +1,1 @@
-aarch64-linux-gnu-gcc-14 -c main.adb
-main.adb:14:23: error: unconstrained subtype not allowed (need initialization)
-main.adb:14:23: error: provide initial value or explicit array bounds
-gnatmake: "main.adb" compilation error
+gnatmake: "main" up to date.
